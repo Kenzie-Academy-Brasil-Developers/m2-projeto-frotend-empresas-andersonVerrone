@@ -149,12 +149,12 @@ i.fa-trash-can:hover {
     font-weight: 400;
 }
 
-.chip:hover {
+/* .chip:hover {
     border: 1px solid var(--grey2);
     color: var(--grey2);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
-}
+} */
 
 /* text */
 

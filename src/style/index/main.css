@@ -39,6 +39,11 @@
   color: #FFFFFF;
 }
 
+#sector__picker > option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
 .company__container {
     width: 100%;
     height: 48.375rem;
