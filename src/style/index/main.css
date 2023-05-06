@@ -1,0 +1,96 @@
+.main__container {
+  display: flex;
+  margin: 2.6875rem auto 2.9375rem;
+  width: fit-content;
+  height: calc(100vh- 10.56rem);
+  gap: 3.75rem;
+  align-items: center;
+}
+
+.main__container > img {
+  width: 34.375rem;
+  height: calc(100vh - 10.6249rem);
+}
+
+.section__container {
+  width: 34.375rem;
+  height: calc(100vh - 10.6249rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6763rem;
+}
+
+#sector__picker {
+  width: 100%;
+  height: 3.2612rem;
+  border: none;
+  background: var(--brand1);
+  padding-left: 1.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../../assets/icon/dropbox.svg');
+  background-repeat: no-repeat;
+  background-position: center right 1.8125rem;
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+#sector__picker > option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.company__container {
+    width: 100%;
+    height: 48.375rem;
+    box-shadow: 0 0 2.1875rem 0 rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.6875rem 1.75rem 1rem 2.0625rem;
+    gap: 1.375rem;
+}
+
+.company__container > h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.items__container {
+    width: 100%;
+    height: 37.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    gap: 1.5rem;
+}
+
+.item {
+    width: 100%;
+    height: 7.25rem;
+    background: var(--mode);
+    border: 1px solid var(--brand1);
+    list-style: none;
+    padding: 1.3125rem 1.5625rem 1.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .625rem;
+}
+
+.item > p {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.item > button {
+    padding: .375rem 1.625rem;
+}

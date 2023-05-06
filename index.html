@@ -7,16 +7,43 @@
     <title>Document</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./src/style/globalStyles.css">
+    <link rel="stylesheet" href="./src/style/index/style.css" />
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/fb2208b0dd.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/fb2208b0dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- <i class="fa-regular fa-eye"></i>
     <i class="fa-sharp fa-regular fa-eye-slash"></i>
     <i class="fa-solid fa-pencil"></i>
     <i class="fa-regular fa-trash-can"></i> -->
+    <header class="header__container--first">
+      <img
+        src="./src/assets/img/logoKenzieEmpresas.svg"
+        alt="Logo Kenzie Empresas"
+        class="logo"
+      />
+      <nav class="nav__container">
+        <button class="btn-outlined nav__btn__login">Login</button>
+        <button class="btn--default nav__btn__register">Cadastro</button>
+      </nav>
+    </header>
+    <main class="main__container">
+      <img src="./src/assets/img/img-home.svg" alt="Imagem Home" />
+      <section class="section__container">
+        <select id="sector__picker">
+          <option value="">Selecionar Setor</option>
+        </select>
+        <div class="company__container">
+          <h2>Lista de Empresas</h2>
+          <ul class="items__container">
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/scripts/index/script.js"></script>
   </body>
 </html>
