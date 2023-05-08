@@ -1,0 +1,17 @@
+@import url(../globalStyles.css);
+@import url(./main.css);
+
+body {
+    height: 100vh;
+}
+.register {
+    height: 28.6875rem;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
