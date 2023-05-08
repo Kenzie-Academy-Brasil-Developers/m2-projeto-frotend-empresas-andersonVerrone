@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenzie Empresas | Login</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/registerPage/style.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fb2208b0dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header__container--first">
+      <img
+        src="../assets/img/logoKenzieEmpresas.svg"
+        alt="Logo Kenzie Empresas"
+        class="logo"
+      />
+      <nav class="nav__container">
+        <button class="btn-outlined nav__btn__login">Login</button>
+        <button class="btn--default nav__btn__register">Cadastro</button>
+      </nav>
+    </header>
+    <main class="main__container">
+      <section class="section__container">
+        <div class="login__container hidden">
+          <h2>Login</h2>
+          <p>Preencha os campos para realizar login</p>
+          <input class="" type="text" placeholder="Seu e-mail" />
+          <div class="password__container">
+            <input class="" type="password" placeholder="Sua senha" />
+            <!-- <i class="fa-regular fa-eye"></i> -->
+            <i class="fa-sharp fa-regular fa-eye-slash"></i>
+          </div>
+          <button class="btn--default btn__login">Login</button>
+          <p>ou</p>
+          <button class="btn-outlined btn__to__register">Cadastre-se</button>
+        </div>
+        <div class="register__container hidden">
+          <h2>Cadastre-se</h2>
+          <input type="text" placeholder="Seu nome" />
+          <input type="text" placeholder="Seu e-mail" />
+          <div class="password__container">
+            <input class="" type="password" placeholder="Sua senha" />
+            <!-- <i class="fa-regular fa-eye"></i> -->
+            <i class="fa-sharp fa-regular fa-eye-slash"></i>
+          </div>
+          <button class="btn--default btn__register">Cadastrar</button>
+          <button class="btn-outlined btn__back">Retornar</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../scripts/registerPage/script.js"></script>
+  </body>
 </html>
