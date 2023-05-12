@@ -1,0 +1,217 @@
+.main__container {
+  width: 73.875rem;
+  margin: 0 auto;
+  padding-top: 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#select__container {
+  width: 18rem;
+  height: 3.25rem;
+  border: none;
+  background: var(--brand1);
+  padding-left: 1.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../assets/icon/dropbox.svg");
+  background-repeat: no-repeat;
+  background-position: center right 1.0625rem;
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 1.5625rem;
+}
+
+#select__container > option {
+  background: #ffffff;
+  color: #000000;
+}
+
+.departments__container {
+  width: 100%;
+  height: 28.6875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.9375rem;
+}
+
+.departments__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.departments__top > h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: #000000;
+}
+
+.departments__top > button {
+  width: 9.375rem;
+  height: 3.1506rem;
+}
+
+.departments__list {
+  width: 100%;
+  height: 24.0625rem;
+  box-shadow: 0 0 1.5625rem 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 3rem 3.5rem 0;
+  overflow-y: auto;
+  margin-bottom: 3.3125rem;
+  background-color: #F8F8F8;
+}
+
+.empty__container {
+  width: 100%;
+  height: 24.0625rem;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty__container > p {
+  font-weight: 500;
+  font-size: 1.25rem;
+  
+}
+
+.departments__list::-webkit-scrollbar {
+  appearance: none;
+  width: 0.5625rem;
+}
+
+.departments__list::-webkit-scrollbar-thumb {
+  background-color: var(--brand1);
+}
+
+.departments__item {
+  list-style: none;
+  width: 30.5625rem;
+  height: 12.25rem;
+  border: 1px solid var(--brand1);
+  background-color: var(--mode);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.125rem 2.1875rem 1.125rem 1.8125rem;
+  margin-bottom: 2.6875rem;
+}
+
+.departments__item:nth-child(odd) {
+  margin-right: 4.81rem;
+}
+
+.departments__item > div:first-child {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.625rem;
+  color: #000000;
+}
+
+.departments__item > div:first-child > h3 {
+  font-family: 700;
+  font-size: 1.25rem;
+}
+
+.departments__item > div:first-child > p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.departments__item > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.users__container {
+  width: 100%;
+  height: 27.3125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 6.4375rem;
+}
+
+.users__container > h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: #000000;
+}
+
+.users__list {
+  width: 100%;
+  height: 24.0625rem;
+  padding: 2.125rem 3.5rem;
+  background: #F8F8F8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.users__list::-webkit-scrollbar {
+  appearance: none;
+  width: 0.5625rem;
+}
+
+.users__list::-webkit-scrollbar-thumb {
+  background-color: var(--brand1);
+}
+
+.user__item {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 30.5625rem;
+  height: 9.0625rem;
+  padding: 1.125rem 1.875rem;
+  border: 1px solid var(--brand1);
+  background-color: var(--mode);
+  margin-bottom: 1.9375rem;
+}
+
+.user__item:nth-child(odd) {
+  margin-right: 4.81rem;
+}
+
+.user__item>div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .6875rem;
+  color: #000000;
+}
+
+.user__item>div:first-child>h3 {
+  font-family: 700;
+  font-size: 1.25rem;
+}
+
+.user__item>div:first-child>p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.user__item>div:nth-child(2) {
+  height: 100%;
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-direction: column;
+}

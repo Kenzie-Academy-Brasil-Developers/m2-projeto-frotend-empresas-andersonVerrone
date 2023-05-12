@@ -1,0 +1,34 @@
+.toast {
+    position: absolute;
+    inset-inline-start: calc(100vw - 26rem);
+    inset-block-start: calc(100vh - 7.5rem);
+    width: 25rem;
+    height: 6rem;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.toast > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.toast > div.error {
+    color: var(--action2);
+}
+
+.toast > div.correct {
+    color: var(--action1);
+}
+
+.toast > div > i {
+    font-size: 1.9375rem;
+}

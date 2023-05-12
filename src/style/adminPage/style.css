@@ -1,17 +1,12 @@
 @import url(../globalStyles.css);
 @import url(./main.css);
+@import url(./modal.css);
 @import url(./toast.css);
 
 body {
-    height: 100vh;
+    height: fit-content;
+    overflow-y: auto;
     position: relative;
-}
-.register {
-    height: 28.6875rem;
-}
-
-.show {
-    opacity: 1;
 }
 
 .hidden {

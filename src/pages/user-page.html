@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kenzie Empresas</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/userPage/style.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fb2208b0dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header__container--first">
+      <img
+        src="../assets/img/logoKenzieEmpresas.svg"
+        alt="Logo Kenzie Empresas"
+        class="logo"
+      />
+      <nav class="nav__container">
+        <button class="btn-outlined nav__btn__logout">Logout</button>
+      </nav>
+    </header>
+
+    <main class="main__container">
+      <section class="user__container">
+        <h2>USERNAME</h2>
+        <p>meuemail@mail.com</p>
+      </section>
+      <section class="empty__container hidden">
+        <p>Você ainda não foi contratado</p>
+      </section>
+      <section class="employee__container">
+        <div class="top__container">
+          <p>NomeCompanhia - NomeDepartamento</p>
+        </div>
+        <div class="bottom__container">
+          <ul class="list__container">
+            <!-- <li class="card__container">
+                <p>NomeFuncionário</p>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/userPage/script.js" type="module"></script>
+  </body>
 </html>
