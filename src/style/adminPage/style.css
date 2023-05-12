@@ -1,0 +1,14 @@
+@import url(../globalStyles.css);
+@import url(./main.css);
+@import url(./modal.css);
+@import url(./toast.css);
+
+body {
+    height: fit-content;
+    overflow-y: auto;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}

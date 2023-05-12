@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenzie Empresas</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/style/index/style.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fb2208b0dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header__container--first">
+      <img
+        src="./src/assets/img/logoKenzieEmpresas.svg"
+        alt="Logo Kenzie Empresas"
+        class="logo"
+      />
+      <nav class="nav__container">
+        <button class="btn-outlined nav__btn__login">Login</button>
+        <button class="btn--default nav__btn__register">Cadastro</button>
+      </nav>
+    </header>
+    <main class="main__container">
+      <img src="./src/assets/img/img-home.svg" alt="Imagem Home" />
+      <section class="section__container">
+        <select id="sector__picker">
+          <option value="">Selecionar Setor</option>
+        </select>
+        <div class="company__container">
+          <h2>Lista de Empresas</h2>
+          <ul class="items__container">
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/scripts/index/script.js"></script>
+  </body>
+</html>

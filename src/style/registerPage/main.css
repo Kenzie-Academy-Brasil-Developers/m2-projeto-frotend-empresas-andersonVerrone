@@ -1,0 +1,140 @@
+.main__container {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background-image: url("../../assets/img/img-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizequality;
+    padding-top: 8.9375rem;
+}
+
+.section__container {
+    margin: 0 auto;
+    width: 31.625rem;
+    height: 30.5625rem;
+    background: var(--mode);
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.login__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.4375rem 2.625rem 2.6875rem;
+    opacity: 0;
+}
+
+.login__container > h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: .6875rem;
+}
+
+.login__container > p:first-of-type {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    height: 3.25rem;
+    background: var(--mode);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 1.0625rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    outline: none;
+    margin-bottom: .8125rem;
+}
+
+.login__container > div {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.login__container > div > input {
+    margin: 0;
+}
+
+.login__container > div > i {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.login__container > button {
+    width: 100%;
+    height: 3rem;
+}
+
+.login__container > button:first-of-type {
+    margin-bottom: 1.1875rem;
+}
+
+.login__container > p:last-of-type {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #000000;
+    margin-bottom: 1.25rem;
+}
+
+.register__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 2.625rem 2.5625rem;
+    opacity: 0;
+}
+
+.register__container > h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: .875rem;
+}
+
+.register__container > input {
+    margin-bottom: .75rem;
+}
+
+.register__container > div {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.register__container > div > input {
+    margin: 0;
+}
+
+.register__container > div > i {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.register__container > button {
+    width: 100%;
+    height: 3rem;
+}
+
+.register__container > button:first-of-type {
+    margin-bottom: .75rem;
+}

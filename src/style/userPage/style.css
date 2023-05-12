@@ -1,0 +1,10 @@
+@import url(../globalStyles.css);
+@import url(./main.css);
+
+body {
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}

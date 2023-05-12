@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kenzie Empresas - Admin</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/adminPage/style.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fb2208b0dd.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <header class="header__container--first">
+      <img
+        src="../assets/img/logoKenzieEmpresas.svg"
+        alt="Logo Kenzie Empresas"
+        class="logo"
+      />
+      <nav class="nav__container">
+        <button class="btn-outlined nav__btn__logout">Logout</button>
+      </nav>
+    </header>
+
+    <main class="main__container">
+      <select id="select__container">
+        <option value="">Selecionar Empresas</option>
+      </select>
+      <div class="departments__container">
+        <div class="departments__top">
+          <h2>Departamentos</h2>
+          <button class="btn--default btn__create">+ Criar</button>
+        </div>
+        <ul class="departments__list hidden">
+        </ul>
+        <div class="empty__container">
+          <p><span>Empresa Nome</span> não possui departamentos</p>
+        </div>
+      </div>
+      <div class="users__container">
+        <h2>Usuários cadastrados</h2>
+        <ul class="users__list">
+        </ul>
+      </div>
+    </main>
+
+    <dialog class="modal__view">
+      <div>
+        <h2>Nome do departamento</h2>
+        <h3>Descrição do departamento</h3>
+        <p>Empresa pertencente</p>
+        <div>
+          <select id="select__modal__edit">
+            <option value="">Selecionar usuário</option>
+          </select>
+          <button class="btn-action1">Contratar</button>
+        </div>
+        <ul class="list__container--edit">
+        </ul>
+        <p class="btn__close__modal">x</p>
+      </div>
+    </dialog>
+    <dialog class="modal__create">
+      <div>
+        <h2>Criar Departamento</h2>
+        <input type="text" placeholder="Nome do departamento" class="modal__create__name">
+        <input type="text" placeholder="Descrição" class="modal__create__desc">
+        <select id="modal__create--department">
+          <option value="">Selecionar empresa</option>
+        </select>
+        <button class="btn-action1">Criar</button>
+        <p class="btn__close__modal">x</p>
+      </div>
+    </dialog>
+    <dialog class="modal__edit--departments">
+      <div>
+        <h2>Editar Departamento</h2>
+        <textarea placeholder="Valores anteriores da descrição"></textarea>
+        <button class="btn-action1">Salvar</button>
+        <p>x</p>
+      </div>
+    </dialog>
+    <dialog class="modal__delete">
+      <div>
+        <p>
+          Realmente deseja remover o
+          <span>
+            Departamento NOME
+          </span> 
+          e demitir seus funcionários?
+        </p>
+        <button class="btn-action2">Remover</button>
+        <p class="btn__close__modal">x</p>
+      </div>
+    </dialog>
+    <dialog class="modal__edit--user">
+      <div>
+        <h2>Editar Usuário</h2>
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="E-mail">
+        <button class="btn-action1">Salvar</button>
+        <p>x</p>
+      </div>
+    </dialog>
+    <dialog class="modal__delete--user">
+      <div>
+        <p>
+          Realmente deseja remover o
+          <span>
+            usuário NOME?
+          </span>
+        </p>
+        <button class="btn-action2">Remover</button>
+        <p class="btn__close__modal">x</p>
+      </div>
+    </dialog>
+    <dialog class="toast">
+      <div>
+        <!-- <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>erro ao cadastrar usuario</p> -->
+        <!-- <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <p>Usuario Cadastrado!</p> -->
+      </div>
+    </dialog>
+
+    <script type="module" src="../scripts/adminPage/script.js"></script>
+  </body>
+</html>
